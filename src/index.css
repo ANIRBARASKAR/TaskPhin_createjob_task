@@ -68,7 +68,7 @@
   }
 
   .main-card {
-    @apply bg-customecard shadow-md rounded-md p-4;
+    @apply bg-customecard shadow-md rounded-md p-4  md:m-6 sm:m-2;
   }
 
   .outline-btn {

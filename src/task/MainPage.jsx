@@ -31,6 +31,7 @@ const MainPage = () => {
     try {
       const data = await fetchData();
       setallData(data);
+      console.log("allData", allData);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -165,17 +166,30 @@ const MainPage = () => {
                       <p className="t-base">{item?.totalEmp} Employees</p>
 
                       <div className="content mt-4">
-                        <button type="submit" className="main-btn  py-2">
+                        <button
+                          type="submit"
+                          className={
+                            item?.applyType == "Quick Apply"
+                              ? "main-btn  py-2"
+                              : "outline-btn"
+                          }
+                        >
                           {item?.applyType}
                         </button>
                       </div>
                     </div>
                   </div>
                   <div className="content">
-                    <span onClick={() => handleEditClick(item, i)}>
+                    <span
+                      className="cursor-pointer"
+                      onClick={() => handleEditClick(item, i)}
+                    >
                       <EditIcon />
                     </span>
-                    <span onClick={() => handleDeleteClick(item.id)}>
+                    <span
+                      className="cursor-pointer"
+                      onClick={() => handleDeleteClick(item.id)}
+                    >
                       <TrashIcon />
                     </span>
                   </div>

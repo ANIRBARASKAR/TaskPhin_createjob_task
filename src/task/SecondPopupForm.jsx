@@ -128,7 +128,7 @@ export default function SecondPopupForm({ onSubmit, initialData }) {
             </label>
 
             <div className="flex justify-start content-baseline mt-2">
-              <div>
+             
                 <Field
                   type="radio"
                   id="quickApply1"
@@ -139,9 +139,9 @@ export default function SecondPopupForm({ onSubmit, initialData }) {
                 <label htmlFor="quickApply1" className="mr-6 radio-lable">
                   Quick apply
                 </label>
-              </div>
+           
 
-              <div>
+              
                 <Field
                   type="radio"
                   id="quickApply2"
@@ -152,7 +152,7 @@ export default function SecondPopupForm({ onSubmit, initialData }) {
                 <label htmlFor="quickApply2" className="radio-lable">
                   External apply
                 </label>
-              </div>
+              
             </div>
           </div>
         </div>
