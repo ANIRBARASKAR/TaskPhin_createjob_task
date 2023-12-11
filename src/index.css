@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main {
+    @apply fixed inset-0 bg-gray-800 bg-opacity-50 sm:p-2 flex items-center justify-center;
+  }
+
+  .main-sub {
+    @apply bg-customecard m-2 p-4 sm:w-full md:w-2/5 min-h-fit rounded-md;
+  }
+
+  .steps {
+    @apply flex justify-between gap-4 mb-4;
+  }
+
+  .steps-sub {
+    @apply text-base font-medium;
+  }
+
+  .label-step {
+    @apply text-gray-700 text-sm font-medium;
+  }
+
+  .radio-lable {
+    @apply text-customgray text-sm mb-1;
+  }
+
+  .inp {
+    @apply w-full text-sm px-2 mt-1 placeholder-customgray py-1 border border-customgrayborder rounded appearance-none focus:outline-none;
+  }
+
+  .twins-inp {
+    @apply mb-4 flex justify-between gap-4;
+  }
+
+  .btn-radio {
+    @apply rounded-full text-indigo-600 border-gray-300 focus:ring-indigo-500 h-5 w-5 mr-2;
+  }
+
+  .main-btn {
+    @apply bg-customblue text-white text-sm px-4 py-2 rounded;
+  }
+
+  .step-btn {
+    @apply mt-16 flex justify-end;
+  }
+
+  .error-msg {
+    @apply text-sm;
+  }
+
+  .spacing {
+    @apply mb-4;
+  }
+
+  .content {
+    @apply flex gap-2;
+  }
+
+  .controls {
+    @apply bg-customebg min-h-screen overflow-y-auto;
+  }
+
+  .main-col {
+    @apply mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4;
+  }
+
+  .main-card {
+    @apply bg-customecard shadow-md rounded-md p-4;
+  }
+
+  .outline-btn {
+    @apply bg-white border border-blue-500 text-blue-500 text-base px-3 py-1 rounded transition duration-300 ease-in-out hover:bg-blue-500 hover:text-white;
+  }
+
+  .t-base {
+    @apply text-base;
+  }
+}
